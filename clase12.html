@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 12 · Orden Superior y Callbacks</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+<div class="container">
+    <nav class="navbar">
+        <a href="index.html">🏠 Volver al Índice</a>
+        <span style="color:#94a3b8;">Clase 12 de 13</span>
+    </nav>
+    <div class="card u2">
+        <span class="badge">Unidad 2 · Clase 12</span>
+        <h1>12. Funciones de Orden Superior y Callbacks</h1>
+        <p>En JavaScript, una función es un <strong>valor</strong> igual que un número o un texto. Por eso, podés pasarle una función como argumento a otra función.</p>
+        <ul>
+            <li><strong>Función de Orden Superior:</strong> Recibe otra función por parámetro.</li>
+            <li><strong>Callback:</strong> Es la función que se pasa como argumento para ser ejecutada en el momento indicado.</li>
+        </ul>
+        <pre>function procesarNumero(numero, callback) {
+    let resultado = numero * 2;
+    callback(resultado);
+}
+
+procesarNumero(5, (valor) => console.log("El doble es:", valor));</pre>
+
+        <div class="paginacion">
+            <a href="clase11.html" class="btn sec">← Clase 11</a>
+            <a href="clase13.html" class="btn">Clase 13: map, filter, reduce →</a>
+        </div>
+    </div>
+</div>
+</body>
+</html>

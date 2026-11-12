@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 8 · Patrón de Validación</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+<div class="container">
+    <nav class="navbar">
+        <a href="index.html">🏠 Volver al Índice</a>
+        <span style="color:#94a3b8;">Clase 8 de 13</span>
+    </nav>
+    <div class="card">
+        <span class="badge">Unidad 1 · Clase 8</span>
+        <h1>8. El Patrón de Validación con Funciones</h1>
+        <p>Al unir funciones con un bucle <code>while</code>, el programa principal queda limpio y se lee como español:</p>
+        <pre>function limpiarPatente(texto) {
+    return texto.trim().toUpperCase();
+}
+
+function validarPatente(patente) {
+    return patente.length === 7;
+}
+
+let patente = limpiarPatente(prompt("Patente:"));
+while (!validarPatente(patente)) {
+    patente = limpiarPatente(prompt("Inválida. Ingrese 7 caracteres:"));
+}</pre>
+
+        <div class="paginacion">
+            <a href="clase7.html" class="btn sec">← Clase 7</a>
+            <a href="clase9.html" class="btn">Clase 9: TP1 →</a>
+        </div>
+    </div>
+</div>
+</body>
+</html>

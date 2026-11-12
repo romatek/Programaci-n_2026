@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 9 · TP1 Control de Ruta</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+<div class="container">
+    <nav class="navbar">
+        <a href="index.html">🏠 Volver al Índice</a>
+        <span style="color:#94a3b8;">Clase 9 de 13</span>
+    </nav>
+    <div class="card tp">
+        <span class="badge">Evaluación · Clase 9</span>
+        <h1>9. TP1: Sistema de Control de Ruta</h1>
+        <p>Evalúa toda la Unidad 1 (sin arreglos ni objetos). Se resuelve dividiendo el sistema en 4 funciones:</p>
+        <ol>
+            <li><code>limpiarPatente(texto)</code>: Usa <code>.trim().toUpperCase()</code>.</li>
+            <li><code>validarPatente(patente)</code>: Retorna <code>true</code> si tiene 6 o 7 caracteres.</li>
+            <li><code>pedirVelocidad()</code>: Pide, convierte con <code>Number()</code> y repite con <code>while</code> si es <code>NaN</code> o menor a 0.</li>
+            <li><code>calcularMulta(velocidad)</code>: Devuelve <code>0</code> (hasta 110), <code>5000</code> (111 a 130) o <code>10000</code> (> 130).</li>
+        </ol>
+        <pre>console.log(`Reporte: Vehículo ${patente} iba a ${velocidad} km/h. Multa: $${multa}`);</pre>
+
+        <div class="paginacion">
+            <a href="clase8.html" class="btn sec">← Clase 8</a>
+            <a href="clase10.html" class="btn">Clase 10: Arreglos →</a>
+        </div>
+    </div>
+</div>
+</body>
+</html>

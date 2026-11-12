@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 10 · Arreglos (Arrays)</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+<div class="container">
+    <nav class="navbar">
+        <a href="index.html">🏠 Volver al Índice</a>
+        <span style="color:#94a3b8;">Clase 10 de 13</span>
+    </nav>
+    <div class="card u2">
+        <span class="badge">Unidad 2 · Clase 10</span>
+        <h1>10. Arreglos (Arrays): Colecciones de Datos</h1>
+        <p>Un <strong>arreglo</strong> es una lista ordenada que guarda muchos valores en una sola variable usando corchetes <code>[]</code>.</p>
+
+        <div class="diagrama">
+            <svg width="100%" height="110" viewBox="0 0 500 110">
+                <text x="250" y="20" font-family="monospace" font-size="13" fill="#475569" text-anchor="middle">let patentes = ["AB123CD", "XY987ZW", "MN456GH"];</text>
+                <rect x="60" y="35" width="120" height="42" fill="#d1fae5" stroke="#059669" stroke-width="2"/>
+                <text x="120" y="62" font-family="monospace" font-size="14" font-weight="bold" fill="#064e3b" text-anchor="middle">"AB123CD"</text>
+                <text x="120" y="98" font-family="sans-serif" font-size="12" fill="#dc2626" font-weight="bold" text-anchor="middle">Índice 0</text>
+                <rect x="190" y="35" width="120" height="42" fill="#d1fae5" stroke="#059669" stroke-width="2"/>
+                <text x="250" y="62" font-family="monospace" font-size="14" font-weight="bold" fill="#064e3b" text-anchor="middle">"XY987ZW"</text>
+                <text x="250" y="98" font-family="sans-serif" font-size="12" fill="#475569" text-anchor="middle">Índice 1</text>
+                <rect x="320" y="35" width="120" height="42" fill="#d1fae5" stroke="#059669" stroke-width="2"/>
+                <text x="380" y="62" font-family="monospace" font-size="14" font-weight="bold" fill="#064e3b" text-anchor="middle">"MN456GH"</text>
+                <text x="380" y="98" font-family="sans-serif" font-size="12" fill="#475569" text-anchor="middle">Índice 2 (length - 1)</text>
+            </svg>
+            <div class="caption">¡Regla vital! Las posiciones siempre empiezan a contar desde 0.</div>
+        </div>
+
+        <pre>let velocidades =;
+
+for (let i = 0; i < velocidades.length; i++) {
+    console.log(velocidades[i]);
+}
+
+velocidades.push(110); // Agrega AL FINAL
+velocidades.pop();     // Saca el ÚLTIMO</pre>
+
+        <div class="paginacion">
+            <a href="clase9.html" class="btn sec">← Clase 9 (TP1)</a>
+            <a href="clase11.html" class="btn">Clase 11: Métodos y Objetos →</a>
+        </div>
+    </div>
+</div>
+</body>
+</html>

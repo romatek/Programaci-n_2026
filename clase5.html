@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 5 · Bucles, Strings y Errores</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+<div class="container">
+    <nav class="navbar">
+        <a href="index.html">🏠 Volver al Índice</a>
+        <span style="color:#94a3b8;">Clase 5 de 13</span>
+    </nav>
+    <div class="card">
+        <span class="badge">Unidad 1 · Clase 5</span>
+        <h1>5. Bucles (<code>for</code> / <code>while</code>), Strings y Errores</h1>
+        <ul>
+            <li><strong>Bucle <code>for</code>:</strong> Cuando <strong>sabés cuántas vueltas</strong> dar (ej. contar 5 autos).</li>
+            <li><strong>Bucle <code>while</code>:</strong> Cuando <strong>no sabés cuántas veces</strong>; repite mientras se cumpla una condición.</li>
+        </ul>
+        <pre>// FOR: Arranca en 1, sigue mientras i <= 5, suma 1 en cada vuelta
+for (let i = 1; i <= 5; i++) {
+    console.log("Pasó el auto", i);
+}
+
+// WHILE: Repite mientras el dato sea inválido
+let vel = Number(prompt("Velocidad:"));
+while (isNaN(vel) || vel < 0) {
+    vel = Number(prompt("Inválido. Velocidad:")); // ¡Vital actualizar!
+}</pre>
+
+        <h2>Métodos de Texto (Strings)</h2>
+        <ul>
+            <li><code>.length</code>: Cantidad de caracteres.</li>
+            <li><code>.trim()</code>: Borra espacios al principio y al final.</li>
+            <li><code>.toUpperCase()</code>: Pasa todo a MAYÚSCULAS.</li>
+            <li><code>.replaceAll(".", "")</code>: Quita todos los puntos (ideal para limpiar un DNI).</li>
+        </ul>
+
+        <h2>Los 3 tipos de errores</h2>
+        <ol>
+            <li><strong>Sintáctico:</strong> Código mal escrito (falta una llave). Sale error rojo y no arranca.</li>
+            <li><strong>Semántico:</strong> Se cuelga en ejecución (ej. un <code>while</code> infinito).</li>
+            <li><strong>Lógico:</strong> Anda sin errores, pero da mal el resultado. Se detecta usando <code>console.log()</code> como linterna.</li>
+        </ol>
+
+        <div class="paginacion">
+            <a href="clase4.html" class="btn sec">← Clase 4</a>
+            <a href="clase6.html" class="btn">Clase 6: Validación DNI →</a>
+        </div>
+    </div>
+</div>
+</body>
+</html>

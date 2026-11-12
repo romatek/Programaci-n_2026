@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 6 · Validación de Datos</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+<div class="container">
+    <nav class="navbar">
+        <a href="index.html">🏠 Volver al Índice</a>
+        <span style="color:#94a3b8;">Clase 6 de 13</span>
+    </nav>
+    <div class="card">
+        <span class="badge">Unidad 1 · Clase 6</span>
+        <h1>6. Validación de Datos: El Patrón de los 4 Pasos</h1>
+        <p>Un texto se puede recorrer letra por letra usando corchetes, empezando siempre desde la posición <strong>0</strong> (<code>dni[0]</code> es la primera letra).</p>
+
+        <div class="diagrama">
+            <svg width="100%" height="90" viewBox="0 0 620 90">
+                <rect x="10" y="20" width="130" height="50" rx="8" fill="#e2e8f0" stroke="#475569"/>
+                <text x="75" y="50" font-family="sans-serif" font-size="13" font-weight="bold" fill="#0f172a" text-anchor="middle">1. ENTRADA</text>
+                <text x="155" y="50" font-family="sans-serif" font-size="18" fill="#2563eb" text-anchor="middle">➔</text>
+                <rect x="170" y="20" width="130" height="50" rx="8" fill="#dbeafe" stroke="#2563eb"/>
+                <text x="235" y="50" font-family="sans-serif" font-size="13" font-weight="bold" fill="#1e3a8a" text-anchor="middle">2. LIMPIAR</text>
+                <text x="315" y="50" font-family="sans-serif" font-size="18" fill="#2563eb" text-anchor="middle">➔</text>
+                <rect x="330" y="20" width="130" height="50" rx="8" fill="#fef3c7" stroke="#d97706"/>
+                <text x="395" y="50" font-family="sans-serif" font-size="13" font-weight="bold" fill="#92400e" text-anchor="middle">3. VALIDAR</text>
+                <text x="475" y="50" font-family="sans-serif" font-size="18" fill="#2563eb" text-anchor="middle">➔</text>
+                <rect x="490" y="20" width="120" height="50" rx="8" fill="#d1fae5" stroke="#059669"/>
+                <text x="550" y="50" font-family="sans-serif" font-size="13" font-weight="bold" fill="#065f46" text-anchor="middle">4. DECIDIR</text>
+            </svg>
+            <div class="caption">El flujo universal para validar cualquier dato (DNI, patente, teléfono).</div>
+        </div>
+
+        <pre>// Técnica "inocente hasta demostrar lo contrario"
+let dni = prompt("DNI:").replaceAll(".", "").trim();
+let soloDigitos = true;
+
+for (let i = 0; i < dni.length; i++) {
+    if (dni[i] < "0" || dni[i] > "9") {
+        soloDigitos = false; // Si encontramos UNA sola letra, es inválido
+    }
+}</pre>
+
+        <div class="paginacion">
+            <a href="clase5.html" class="btn sec">← Clase 5</a>
+            <a href="clase7.html" class="btn">Clase 7: Funciones →</a>
+        </div>
+    </div>
+</div>
+</body>
+</html>

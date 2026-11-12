@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 4 · Práctica de Decisiones</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+<div class="container">
+    <nav class="navbar">
+        <a href="index.html">🏠 Volver al Índice</a>
+        <span style="color:#94a3b8;">Clase 4 de 13</span>
+    </nav>
+    <div class="card">
+        <span class="badge">Unidad 1 · Clase 4</span>
+        <h1>4. Práctica de Decisiones y Validación Básica</h1>
+        <p>Si el usuario escribe <code>"veinte"</code> en letras, <code>Number("veinte")</code> devuelve <code>NaN</code> (<em>Not a Number</em>). Para frenar ese error antes de decidir, usamos <code>isNaN()</code>:</p>
+        <pre>let altura = Number(prompt("Altura del vehículo:"));
+
+if (isNaN(altura)) {
+    console.log("⚠ Error: Ingrese un número válido.");
+} else if (altura <= 2.5) {
+    console.log("🟢 Puede pasar por el túnel.");
+} else {
+    console.log("🔴 No pasa: riesgo de impacto.");
+}</pre>
+
+        <div class="nota">
+            <strong>Cadena vs. Preguntas sueltas:</strong> Usás <code>if / else if</code> cuando los caminos son excluyentes (entra en uno solo). Si querés aplicar varios recargos o descuentos acumulables (como calcular un seguro), usás varios <code>if</code> sueltos uno debajo del otro para que se evalúen todos.
+        </div>
+
+        <div class="paginacion">
+            <a href="clase3.html" class="btn sec">← Clase 3</a>
+            <a href="clase5.html" class="btn">Clase 5: Bucles y Strings →</a>
+        </div>
+    </div>
+</div>
+</body>
+</html>

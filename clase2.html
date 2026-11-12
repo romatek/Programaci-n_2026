@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 2 · Variables, Tipos y Coerción</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+<div class="container">
+    <nav class="navbar">
+        <a href="index.html">🏠 Volver al Índice</a>
+        <span style="color:#94a3b8;">Clase 2 de 13</span>
+    </nav>
+    <div class="card">
+        <span class="badge">Unidad 1 · Clase 2</span>
+        <h1>2. Variables, Tipos de Datos y Coerción</h1>
+        <p>Las variables son <strong>cajas con etiqueta</strong> donde guardás información:</p>
+        <ul>
+            <li><code>let</code>: Caja que podés abrir y cambiar lo que tiene adentro (ej. <code>let velocidad = 80;</code>).</li>
+            <li><code>const</code>: Caja con candado. Una vez que guardás algo, <strong>no se puede cambiar</strong> (ej. <code>const IVA = 0.21;</code>).</li>
+        </ul>
+
+        <h2>Los 5 tipos de datos básicos</h2>
+        <ul>
+            <li><strong>string:</strong> Texto entre comillas (<code>"AB123CD"</code>).</li>
+            <li><strong>number:</strong> Cualquier número, entero o decimal (<code>120</code>, <code>45.5</code>).</li>
+            <li><strong>boolean:</strong> Solo dos valores: <code>true</code> (verdadero) o <code>false</code> (falso).</li>
+            <li><strong>undefined:</strong> Creaste la caja (<code>let x;</code>), pero todavía no guardaste nada.</li>
+            <li><strong>null:</strong> Vaciaste la caja a propósito (<code>let x = null;</code>).</li>
+        </ul>
+
+        <h2>El misterio de <code>"5" + 3</code> (Coerción de tipos)</h2>
+        <pre>// Regla 1: El signo + con un texto SIEMPRE une los textos (concatena)
+console.log("5" + 3); // "53" (¡No suma 8!)
+
+// Regla 2: Los signos -, *, / convierten todo a número
+console.log("5" - 3); // 2</pre>
+
+        <div class="nota peligro">
+            <strong>🏆 Regla de oro para comparar:</strong> Usá siempre triple igual (<code>===</code> y <code>!==</code>). Compara el valor Y el tipo de dato. Nunca uses <code>==</code> porque hace conversiones raras (<code>0 == ""</code> da <code>true</code>).
+        </div>
+
+        <div class="paginacion">
+            <a href="clase1.html" class="btn sec">← Clase 1</a>
+            <a href="clase3.html" class="btn">Clase 3: Condicionales →</a>
+        </div>
+    </div>
+</div>
+</body>
+</html>

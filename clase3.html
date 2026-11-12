@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 3 · Condicionales</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+<div class="container">
+    <nav class="navbar">
+        <a href="index.html">🏠 Volver al Índice</a>
+        <span style="color:#94a3b8;">Clase 3 de 13</span>
+    </nav>
+    <div class="card">
+        <span class="badge">Unidad 1 · Clase 3</span>
+        <h1>3. Condicionales: El programa toma decisiones</h1>
+        <p>Cuando pedís un dato con <code>prompt("Velocidad:")</code>, <strong>siempre llega como texto (string)</strong>. Antes de hacer cuentas, tenés que convertirlo manualmente usando <code>Number()</code>.</p>
+
+        <h2><code>if / else if / else</code> (Para rangos)</h2>
+        <p>JavaScript lee de arriba hacia abajo y <strong>entra únicamente en el primer camino verdadero</strong>:</p>
+        <pre>let velocidad = Number(prompt("Velocidad:"));
+
+if (velocidad <= 80) {
+    console.log("🟢 Normal");
+} else if (velocidad <= 110) {
+    console.log("🟡 Precaución"); // Si llegó acá, ya sabemos que es > 80
+} else {
+    console.log("🔴 Riesgo alto");
+}</pre>
+
+        <h2><code>switch</code> (Para valores exactos)</h2>
+        <pre>switch (codigoInfraccion) {
+    case 1:
+        console.log("Exceso de velocidad");
+        break; // ¡OBLIGATORIO! Corta el switch para que no siga de largo
+    default:
+        console.log("Código inválido");
+}</pre>
+
+        <div class="paginacion">
+            <a href="clase2.html" class="btn sec">← Clase 2</a>
+            <a href="clase4.html" class="btn">Clase 4: Práctica y NaN →</a>
+        </div>
+    </div>
+</div>
+</body>
+</html>

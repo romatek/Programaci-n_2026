@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 13 · map, filter, reduce + TP2</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+<div class="container">
+    <nav class="navbar">
+        <a href="index.html">🏠 Volver al Índice</a>
+        <span style="color:#94a3b8;">Clase 13 de 13</span>
+    </nav>
+    <div class="card tp">
+        <span class="badge">Unidad 2 · Clase 13 + TP2</span>
+        <h1>13. Los 3 Gigantes: <code>map</code>, <code>filter</code> y <code>reduce</code></h1>
+        <table>
+            <tr><th>Método</th><th>¿Qué hace?</th><th>Largo del resultado</th></tr>
+            <tr><td><code>.map()</code></td><td><strong>Transforma</strong> cada elemento.</td><td><strong>Igual</strong> al original.</td></tr>
+            <tr><td><code>.filter()</code></td><td><strong>Filtra</strong> los que cumplen la condición.</td><td><strong>Menor o igual</strong> al original.</td></tr>
+            <tr><td><code>.reduce()</code></td><td><strong>Acumula</strong> todo en un único resultado.</td><td>Un <strong>único valor</strong>.</td></tr>
+        </table>
+
+        <pre>let registros = [
+    { patente: "AB123CD", velocidad: 120, km: 150 },
+    { patente: "XY987ZW", velocidad: 95,  km: 300 },
+    { patente: "MN456GH", velocidad: 135, km: 80 }
+];
+
+// 1. MAP: Saco solo las patentes
+let patentes = registros.map(v => v.patente);
+
+// 2. FILTER: Solo infractores (> 110 km/h)
+let infractores = registros.filter(v => v.velocidad > 110);
+
+// 3. REDUCE: Sumo todos los km (el 0 final es el valor inicial)
+let totalKm = registros.reduce((acc, v) => acc + v.km, 0); // 530</pre>
+
+        <div class="nota peligro">
+            <strong>🚫 Regla del TP2:</strong> Está prohibido usar bucles <code>for</code> o <code>while</code> para procesar la flota. Todo se resuelve encadenando <code>filter</code>, <code>map</code> y <code>reduce</code>.
+        </div>
+
+        <div class="paginacion">
+            <a href="clase12.html" class="btn sec">← Clase 12</a>
+            <a href="index.html" class="btn">Volver al Inicio 🏠</a>
+        </div>
+    </div>
+</div>
+</body>
+</html>

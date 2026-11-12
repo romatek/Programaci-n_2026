@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 7 · Funciones y Scope</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+<div class="container">
+    <nav class="navbar">
+        <a href="index.html">🏠 Volver al Índice</a>
+        <span style="color:#94a3b8;">Clase 7 de 13</span>
+    </nav>
+    <div class="card">
+        <span class="badge">Unidad 1 · Clase 7</span>
+        <h1>7. Funciones, Scope y Modularización</h1>
+        <p>Una <strong>función</strong> es una receta con nombre que escribís una vez y llamás todas las veces que necesites para no copiar y pegar código.</p>
+        <pre>function calcularDescuento(monto) { // 'monto' es el parámetro
+    return monto * 0.80; // RETURN devuelve el resultado para usarlo afuera
+}
+
+let total = calcularDescuento(5000); // Vale 4000</pre>
+        <ul>
+            <li><strong><code>console.log()</code> vs. <code>return</code>:</strong> <code>console.log</code> solo muestra texto en pantalla. Si querés guardar el resultado en una variable, necesitás <code>return</code>.</li>
+            <li><strong>Scope:</strong> Las variables creadas <em>adentro</em> de una función solo existen ahí adentro.</li>
+            <li><strong>Modularizar:</strong> Dividir un problema grande en funciones chiquitas donde <strong>cada una hace una sola cosa</strong>.</li>
+        </ul>
+
+        <div class="paginacion">
+            <a href="clase6.html" class="btn sec">← Clase 6</a>
+            <a href="clase8.html" class="btn">Clase 8: Patrón Validación →</a>
+        </div>
+    </div>
+</div>
+</body>
+</html>
